@@ -4,17 +4,24 @@ public class Letter {
   
   public Letter(char symbol){
     this.symbol = symbol;
+  }
+  @Override 
+  public String toString() {
+    return String.valueOf(symbol);
+  }
+  @Override 
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
+    Letter letter = (Letter) o; // ТУТ МАЄ БУТИ ВЕЛИКА 'L'
+    return symbol == letter.symbol;
+  }  
+  
+  @Override 
+  public int hashCode() {
+      return Objects.hash(symbol);
+  }
+   
 }
-@Override 
-public String toString() {
-  return String.valueOf(symbol);
-}
-@Override 
-public boolean equals(Object o) {
-  if (this == o) return true;
-  if (o == null || getClass() != o.getClass()) return false;
-  Letter letter = (letter) o;
-  return symbol == letter.symbol;
-}  
-
+  
   

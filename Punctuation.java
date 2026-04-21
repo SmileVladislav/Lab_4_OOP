@@ -1,22 +1,6 @@
-import java.util.Objects;
-
-public class Punctuation implements SentenceElement {
-    private final char symbol;
-
-    public Punctuation(char symbol) {
-        this.symbol = symbol;
-    }
-
+public class Punctuation {
+    private char mark;
+    public Punctuation(char c) { this.mark = c; }
     @Override
-    public String toString() {
-        return String.valueOf(symbol);
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Punctuation that = (Punctuation) o;
-        return symbol == that.symbol;
-    }
+    public String toString() { return String.valueOf(mark); }
 }

@@ -1,3 +1,5 @@
+
+
 # Лабораторна робота №4: Об'єктно-орієнтована модель тексту
 
 ## Виконавець
@@ -12,4 +14,8 @@
 - `double weight` — вага.
 - `int quality` — показник якості.
 
+
+
+
+https://github.com/user-attachments/assets/d9fa634d-54d2-452d-81a9-6f29dc50e60e
 
